@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Firefox') {
           steps {
-            sh 'echo \'executing system tests on firefox'
+            sh 'echo \'executing system tests on firefox...\''
           }
         }
       }
