@@ -30,6 +30,11 @@ pipeline {
         sh 'echo \'executing BETA/QA testing....\''
       }
     }
+    stage('Go/No Go') {
+      steps {
+        input 'Finished using the web site? (Click "Proceed" to continue)'
+      }
+    }
     stage('Deploy') {
       steps {
         sh 'echo \'Deployment successful\''
