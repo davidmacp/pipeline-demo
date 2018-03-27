@@ -32,7 +32,7 @@ pipeline {
     }
     stage('Go/No Go') {
       steps {
-        input 'input message: \'Waiting to launch....\', ok: \'Drop the bomb\', submitter: \'"dave"\', submitterParameter: \'name\''
+        input(message: 'Waiting to launch....', ok: 'Drop the bomb')
       }
     }
     stage('Deploy') {
