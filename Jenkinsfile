@@ -32,7 +32,7 @@ pipeline {
     }
     stage('Go/No Go') {
       steps {
-        input 'Finished using the web site? (Click "Proceed" to continue)'
+        input 'Ready to deploy? (Click "Proceed" to continue)'
       }
     }
     stage('Deploy') {
